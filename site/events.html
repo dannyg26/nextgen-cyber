@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events</title>
+
+  <link rel="stylesheet" href="../css/events.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ✅ NAVBAR (exact same structure as index.html) -->
+  <nav class="nav" id="site-nav">
+    <a class="logo-badge" href="../index.html" aria-label="NextGen Cyber Home">
+      <img src="../images/nextgen-logo.png" alt="NextGen Cyber Logo" class="nextgen-logo" />
+    </a>
+
+    <!-- ✅ Hamburger (shows on <=1300px) -->
+    <button class="nav-toggle" id="menu-toggle" type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-links">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="links nav-list" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./events.html">Events</a></li>
+      <li><a href="./join-us.html">Join Us</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+      <li><a href="./resources.html">Resources</a></li>
+      <li>
+        <a href="https://www.kean.edu/academics/college-business-and-public-management/center-cybersecurity-0"
+           target="_blank" rel="noopener">
+          Cyber Center at Kean University
+        </a>
+      </li>
+    </ul>
+
+    <div class="right-spacer" aria-hidden="true"></div>
+  </nav>
+
+  <!-- spacer only used on desktop grid nav (mobile uses sticky, no spacer needed) -->
+  <div class="nav-spacer" aria-hidden="true"></div>
+
+  <!-- INTRO -->
+  <div class="intro-container">
+    <h1 class="nextgen-title">Events</h1>
+    <h2 class="nextgen-text">Presented by NextGen Cyber</h2>
+  </div>
+
+  <!-- EVENTS -->
+  <section class="section">
+    <h2 class="page-title">Explore the different events taking place this semester, dates can be found on Cougarlink.</h2>
+
+    <div class="rail-wrap">
+      <button class="arrow prev" aria-label="Scroll left">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M15 19L8 12l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="rail" id="latest-rail">
+        <!-- GBM -->
+        <article class="card dark">
+          <a href="#">
+            <div class="card-body">
+              <h3 class="headline">GBM (General Body Meeting)</h3>
+              <p class="sub">Kick off the semester with updates, networking, and opportunities to get involved in cybersecurity initiatives.</p>
+            </div>
+            <div class="media"><img src="../images/gbm.png" alt="General Body Meeting"></div>
+          </a>
+        </article>
+
+        <!-- Wireshark -->
+        <article class="card">
+          <a href="#">
+            <div class="card-body">
+              <h3 class="headline">Network Scanning with Wireshark</h3>
+              <p class="sub">Learn how to capture and analyze network traffic using Wireshark, a key tool for cybersecurity professionals.</p>
+            </div>
+            <div class="media"><img src="../images/wireshark.png" alt="Wireshark Workshop"></div>
+          </a>
+        </article>
+
+        <!-- Interview Prep -->
+        <article class="card dark">
+          <a href="#">
+            <div class="card-body">
+              <h3 class="headline">Technical Cybersecurity Interview Prep</h3>
+              <p class="sub">Get insider tips and practice for technical interviews, from resume-ready skills to real-world scenarios.</p>
+            </div>
+            <div class="media"><img src="../images/interview.png" alt="Interview Prep"></div>
+          </a>
+        </article>
+
+        <!-- CTF -->
+        <article class="card">
+          <a href="#">
+            <div class="card-body">
+              <h3 class="headline">CTF (Capture the Flag)</h3>
+              <p class="sub">Test your hacking skills in a fast-paced, team-based cybersecurity challenge designed to sharpen your problem-solving.</p>
+            </div>
+            <div class="media"><img src="../images/ctf-comp.png" alt="CTF Competition"></div>
+          </a>
+        </article>
+
+        <!-- Web Hacking -->
+        <article class="card dark">
+          <a href="#">
+            <div class="card-body">
+              <h3 class="headline">Web Hacking for Beginners</h3>
+              <p class="sub">Explore basic web vulnerabilities and learn how ethical hackers uncover and report them safely.</p>
+            </div>
+            <div class="media"><img src="../images/webhack.png" alt="Web Hacking"></div>
+          </a>
+        </article>
+      </div>
+
+      <button class="arrow next" aria-label="Scroll right">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="fade" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="footer-content">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:nextgencyber@kean.edu">nextgencyber@kean.edu</a></p>
+      <p>Kean University, Union, NJ 07083</p>
+
+      <a href="https://forms.cloud.microsoft/r/PsPjnXuvy3" style="color:white" target="_blank" rel="noopener">
+        Any Suggestions? Click here to let us know!
+      </a>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <p class="copyright">© Danny Galvis, 2026 NextGen Cyber Association. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/events.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources</title>
+
+  <link rel="stylesheet" href="../css/resources.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+
+  <!-- ✅ NAVBAR (same structure as index/events) -->
+  <nav class="nav" id="site-nav">
+    <a class="logo-badge" href="../index.html" aria-label="NextGen Cyber Home">
+      <img src="../images/nextgen-logo.png" alt="NextGen Cyber Logo" class="nextgen-logo" />
+    </a>
+
+    <!-- ✅ Hamburger (shows on <=1300px) -->
+    <button class="nav-toggle" id="menu-toggle" type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-links">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="links nav-list" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./events.html">Events</a></li>
+      <li><a href="./join-us.html">Join Us</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+      <li><a href="./resources.html">Resources</a></li>
+      <li>
+        <a href="https://www.kean.edu/academics/college-business-and-public-management/center-cybersecurity-0"
+           target="_blank" rel="noopener">
+          Cyber Center at Kean University
+        </a>
+      </li>
+    </ul>
+
+    <div class="right-spacer" aria-hidden="true"></div>
+  </nav>
+
+  <!-- spacer only used on desktop grid nav (mobile uses sticky, no spacer needed) -->
+  <div class="nav-spacer" aria-hidden="true"></div>
+
+  <!-- INTRO -->
+  <div class="intro-container">
+    <h1 class="nextgen-title">Resources</h1>
+    <h2 class="nextgen-text">Student Organization at Kean University</h2>
+  </div>
+
+  <!-- GRID -->
+  <section class="grid-section">
+    <div class="grid-cards">
+
+      <article class="grid-card">
+        <img src="../images/discord.jpg" alt="Network with Peers" />
+        <div class="grid-card-body">
+          <h3>Network With Your Peers</h3>
+          <p>Join our Discord to chat with club members and collaborate on projects. Email <strong>nextgencyber@kean.edu</strong> to gain access.</p>
+        </div>
+      </article>
+
+      <article class="grid-card">
+        <img src="../images/neetcode.jpg" alt="LeetCode Practice" />
+        <div class="grid-card-body">
+          <h3>LeetCode Practice</h3>
+          <p>Sharpen your problem-solving by practicing the NeetCode 150 list and reviewing patterns together.</p>
+        </div>
+      </article>
+
+      <article class="grid-card">
+        <img src="../images/tryhackme.jpg" alt="Capture the Flag Practice" />
+        <div class="grid-card-body">
+          <h3>Practice Capture the Flag</h3>
+          <p>Build your CTF skills and prep for competitions using TryHackMe and Hack The Box.</p>
+        </div>
+      </article>
+
+      <article class="grid-card">
+        <img src="../images/cyberCenter3.png" alt="Cyber Center at Kean University" />
+        <div class="grid-card-body">
+          <h3>CyberWatch Center at Kean University</h3>
+          <p>The Kean University Center for Cybersecurity drives hands-on learning through workshops, competitions, and year-round events.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="footer-content">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:nextgencyber@kean.edu">nextgencyber@kean.edu</a></p>
+      <p>Kean University, Union, NJ 07083</p>
+
+      <a href="https://forms.cloud.microsoft/r/PsPjnXuvy3" style="color:white" target="_blank" rel="noopener">
+        Any Suggestions? Click here to let us know!
+      </a>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <p class="copyright">© Danny Galvis, 2026 NextGen Cyber Association. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/resources.js"></script>
+</body>
+</html>

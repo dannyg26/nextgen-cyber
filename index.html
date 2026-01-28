@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Cyber HomePage</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+
+  <!-- ✅ NAVBAR -->
+  <nav class="nav" id="site-nav">
+    <a class="logo-badge" href="index.html" aria-label="NextGen Cyber Home">
+      <img src="images/nextgen-logo.png" alt="NextGen Cyber Logo" class="nextgen-logo">
+    </a>
+
+    <!-- ✅ Hamburger (shows on <=1300px) -->
+    <button class="nav-toggle" id="menu-toggle" type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-links">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="links nav-list" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="site/events.html">Events</a></li>
+      <li><a href="site/join-us.html">Join Us</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+      <li><a href="site/resources.html">Resources</a></li>
+      <li>
+        <a href="https://www.kean.edu/academics/college-business-and-public-management/center-cybersecurity-0"
+           target="_blank" rel="noopener">
+          Cyber Center at Kean University
+        </a>
+      </li>
+    </ul>
+
+    <div class="right-spacer" aria-hidden="true"></div>
+  </nav>
+
+  <!-- spacer only used on desktop grid nav (mobile uses sticky, no spacer needed) -->
+  <div class="nav-spacer" aria-hidden="true"></div>
+
+  <div class="intro-container">
+    <h1 class="nextgen-title">NextGen Cyber Association</h1>
+    <h2 class="nextgen-text">Student Organization at Kean University</h2>
+  </div>
+
+  <div class="page-wrap">
+  <section class="hero">
+    <div class="slides" aria-live="polite">
+
+      <!-- SLIDE 1 -->
+      <article class="slide is-active">
+        <img src="images/nextgen-main.jpg" class="slide-image" alt="NextGen Cyber">
+
+        <a class="slide-link" href="#">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="meta">
+              <span class="source">Kean University Chapter</span>
+              <span class="dot">•</span><time>2026</time>
+            </div>
+            <h2 class="title">Welcome to NextGen Cyber Association</h2>
+          </div>
+        </a>
+      </article>
+
+      <!-- SLIDE 2 -->
+      <article class="slide">
+        <img src="images/captureTheFlagPoster.png" class="slide-image" alt="Events">
+
+        <a class="slide-link" href="#">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="meta">
+              <span class="source">Join us at events</span>
+              <span class="dot">•</span><time>Fall & Spring Semester</time>
+            </div>
+            <h2 class="title">Events & Capture the Flag Competitions</h2>
+          </div>
+        </a>
+      </article>
+
+      <!-- SLIDE 3 -->
+      <article class="slide">
+        <img src="images/researchProjects.png" class="slide-image" alt="Research">
+
+        <a class="slide-link" href="#">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="meta">
+              <span class="source">Student Opportunities</span>
+              <span class="dot">•</span><time>Be first to learn about new research opportunities on campus</time>
+            </div>
+            <h2 class="title">Research & Projects</h2>
+          </div>
+        </a>
+      </article>
+
+      <!-- SLIDE 4 -->
+      <article class="slide">
+        <img src="images/interview.png" class="slide-image" alt="Career">
+
+        <a class="slide-link" href="#">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="meta">
+              <span class="source">Professional Development</span>
+              <span class="dot">•</span><time>Training & Guidance</time>
+            </div>
+            <h2 class="title">Career Preparation</h2>
+          </div>
+        </a>
+      </article>
+
+      <!-- SLIDE 5 -->
+      <article class="slide">
+        <img src="images/cyberCenter.jpg"  class="slide-image" alt="Cyber Center">
+
+        <a class="slide-link" href="#">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="meta">
+              <span class="source">Kean University</span>
+              <span class="dot">•</span><time>Explore Resources</time>
+            </div>
+            <h2 class="title">Cyber Center at Kean University</h2>
+          </div>
+        </a>
+      </article>
+
+    </div>
+
+    <button class="hero-arrow prev" aria-label="Previous slide">‹</button>
+    <button class="hero-arrow next" aria-label="Next slide">›</button>
+    <div class="dots" role="tablist" aria-label="Slides"></div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+  <section class="features-grid">
+    <article class="feature-card">
+      <div class="card-media">
+        <img src="images/network-peers.png" alt="Network with peers">
+      </div>
+      <div class="card-body">
+        <h3>Network with Your Fellow Kean Peers</h3>
+        <p>Connect with fellow students, share insights, and collaborate on cybersecurity and coding projects.</p>
+      </div>
+    </article>
+
+    <article class="feature-card">
+      <div class="card-media">
+        <img src="images/leet-code.png" alt="leetcode">
+      </div>
+      <div class="card-body">
+        <h3>LeetCode Practice</h3>
+        <p>Sharpen your problem-solving and coding interview skills with structured algorithm challenges.</p>
+      </div>
+    </article>
+
+    <article class="feature-card">
+      <div class="card-media">
+        <img src="images/ctf-image.png" alt="CTF practice">
+      </div>
+      <div class="card-body">
+        <h3>Capture the Flag Practice</h3>
+        <p>Test your cybersecurity skills in real-world style CTF challenges, puzzles, and competitions.</p>
+      </div>
+    </article>
+
+    <article class="feature-card">
+      <div class="card-media">
+        <img src="images/cyberCenter3.png" alt="Cyberwatch">
+      </div>
+      <div class="card-body">
+        <h3>Cyber Center at Kean University</h3>
+        <p> Center for Cybersecurity advances cyber defense education and research through multidisciplinary collaboration, industry partnerships, and hands‑on student engagement.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="footer-content">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:nextgencyber@kean.edu">nextgencyber@kean.edu</a></p>
+      <p>Kean University, Union, NJ 07083</p>
+
+      <a href="https://forms.cloud.microsoft/r/PsPjnXuvy3" style="color:white" target="_blank" rel="noopener">
+        Any Suggestions? Click here to let us know!
+      </a>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <p class="copyright">© Danny Galvis, 2026 NextGen Cyber Association. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
